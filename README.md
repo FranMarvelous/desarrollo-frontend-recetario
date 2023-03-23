@@ -8,4 +8,4 @@ https://www.figma.com/proto/L3bD0UDNqP525iKUzPlbaM/Recetario-Barvelous?node-id=0
 
 ## Logo:
 
-![Logo de página web: Barvelous - El Recetario.](https://github.com/FranMarvelous/desarrollo-frontend-recetario/blob/main/assets/logotransparenteblanco.png)
+![Logo de página web: Barvelous - El Recetario.](https://github.com/FranMarvelous/desarrollo-frontend-recetario/blob/main/assets/logotransparente.png)
