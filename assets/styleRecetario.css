@@ -2,6 +2,7 @@
 header, nav, main, footer {background-color:gray;}
 
 body {
+    font-family: 'Poppins';
     margin: 1em;
     padding: 0;
     display: grid;
