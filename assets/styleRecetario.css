@@ -1,0 +1,44 @@
+/*Container general*/
+header, nav, main, footer {background-color:gray;}
+
+body {
+    margin: 1em;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 6em);
+    gap: 1em;
+}
+
+/* navbar */
+nav {
+    width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center
+}
+
+li {
+    float: left;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    width: 12%;
+    list-style: none;
+    text-align: center;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins';
+}
+
+.link:hover {
+    color: limegreen;
+}
