@@ -15,7 +15,7 @@ body {
 /*Header*/
 
 header {
-    background-image: url(headerPNG.png);
+    background-image: url(./assets/headerPNG.png);
     grid-column: 1/6;
     padding: 1em;
 }
