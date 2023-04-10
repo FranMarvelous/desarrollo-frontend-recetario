@@ -65,7 +65,7 @@ nav a:hover {
     justify-content: center;
     background-image: url(../assets/headerPNG.png); 
     background-repeat: no-repeat;
-    background-size: 500px;
+    background-size: cover;
     background-position: center;
     min-height: 70vh; 
     background-color: white;
