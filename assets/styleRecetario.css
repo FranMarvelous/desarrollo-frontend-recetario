@@ -15,7 +15,7 @@ main {background-color:lightblue;}
 }
 
 /* RESET */
-body, header, ul, li {margin: 0; padding: 0;}
+body, header {margin: 0; padding: 0;}
 
 /* STYLES */
 body {    
@@ -65,11 +65,10 @@ nav a:hover {
     justify-content: center;
     background-image: url(../assets/headerPNG.png); 
     background-repeat: no-repeat;
-    background-size: 500px, cover;
-    background-position: right top;
+    background-size: 500px;
+    background-position: center;
     min-height: 70vh; 
     background-color: white;
-    background-blend-mode: normal, luminosity;
 
 }
 .slide {
