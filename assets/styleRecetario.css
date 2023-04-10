@@ -1,16 +1,10 @@
 /*Container general*/
 main {background-color:lightblue;}
 
-@media screen and (min-width: 768px) {        
-    :root {
-        --window-padding: 10rem;
-    }    
-}
+  
 @media screen and (max-width: 768px) {        
     section.slide {
-        background-position-x: right, -100px;        
-        background-position-y: bottom, bottom;
-        background-size: 80%, auto;
+        background-size: 100%, auto;
     }
 }
 
@@ -66,8 +60,11 @@ nav a:hover {
     background-image: url(../assets/headerPNG.png); 
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
+    min-height: 70vh; 
     background-color: white;
+    max-width: 2400px;
+    max-height: 70vh;
 }
 
 
