@@ -66,14 +66,8 @@ nav a:hover {
     background-image: url(../assets/headerPNG.png); 
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    min-height: 70vh; 
+    background-position: center; 
     background-color: white;
-
-}
-.slide {
-    max-width: 2400px;
-    max-height: 70vh;
 }
 
 
