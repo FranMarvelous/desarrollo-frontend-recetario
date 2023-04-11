@@ -2,12 +2,6 @@
 main {background-color:lightblue;}
 
   
-@media screen and (max-width: 768px) {        
-    section.slide {
-        background-size: 100%, auto;
-    }
-}
-
 /* RESET */
 body, header {margin: 0; padding: 0;}
 
@@ -32,6 +26,10 @@ header {
     background:linear-gradient(to right, #0C0351, #6F078F);    
     font-size: 0.8em;
 
+}
+
+.pHeader{
+    color: white;
 }
 
 nav {        
@@ -60,10 +58,11 @@ nav a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 70vh; 
+    min-height: 100vh; 
     background-color: white;
     max-width: 2400px;
-    max-height: 70vh;
+    max-height: 100vh;
+    padding-top: 70vh;
 }
 
 
