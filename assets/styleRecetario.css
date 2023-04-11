@@ -23,13 +23,14 @@ header {
     justify-content: space-between;
     align-items: center;    
     padding: 0.3em var(--window-padding);
-    background:linear-gradient(to right, #0C0351, #6F078F);    
+    background:linear-gradient(to right, #0C0351, #54067E);    
     font-size: 0.8em;
 
 }
 
 .pHeader{
     color: white;
+    margin-left: 10px;
 }
 
 nav {        
@@ -45,6 +46,7 @@ nav a {
     fill: white;
     font-weight: 300;
     text-transform: uppercase;
+    margin-right: 10px;
 }
 nav a:hover {
     color: yellowgreen;
