@@ -4,7 +4,7 @@ main {background-color:lightblue;}
   
 @media screen and (max-width: 768px) {        
     section.slide {
-        background-size: 100%, auto;
+        background-size: auto;
     }
 }
 
@@ -54,7 +54,6 @@ nav a:hover {
     
 /*SLIDE*/
 .slide {
-    display: flex;
     justify-content: center;
     background-image: url(../assets/headerPNG.png); 
     background-repeat: no-repeat;
