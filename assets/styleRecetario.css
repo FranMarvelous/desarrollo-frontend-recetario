@@ -54,15 +54,13 @@ nav a:hover {
     
 /*SLIDE*/
 .slide {
+    display: flex;
     justify-content: center;
     background-image: url(../assets/headerPNG.png); 
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    min-height: 70vh; 
     background-color: white;
-    max-width: 2400px;
-    max-height: 70vh;
+
 }
 
 
