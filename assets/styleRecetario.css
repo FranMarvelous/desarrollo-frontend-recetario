@@ -70,6 +70,22 @@ nav a:hover {
     padding-top: 70vh;
 }
 
+.boton{
+    border: 1px solid #06410b; 
+    padding: 10px; /*espacio alrededor texto*/
+    background: linear-gradient(to right, #0b6817, rgb(61, 167, 61)); 
+    color: #ffffff; 
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px; 
+    font-family: 'Poppins'; 
+    border-radius: 8px; /*bordes redondos*/
+    width: 10em;
+    height: 2em;
+    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5); /*sombra*/
+    margin-top: 140px;
+    margin-right: 70%;
+}
 
 /*MAIN*/
 main {
@@ -109,9 +125,11 @@ footer a {
     text-decoration: none;
     color: black;
 }
-a:hover {
-    text-decoration: underline;
+
+footer a:hover {
+    text-decoration:underline;
 }
+
 .ft-title {
     color:black;
     font-family: 'Poppins';
