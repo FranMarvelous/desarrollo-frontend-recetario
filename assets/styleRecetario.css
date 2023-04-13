@@ -115,6 +115,7 @@ h2.cocktails {
     background-repeat: no-repeat;
     margin-bottom: 2em;
     margin-left: 10px;
+    margin-right: 10px;
 }
 #cocktails article h3,
 #cocktails article p {
@@ -123,7 +124,7 @@ h2.cocktails {
 #cocktails article h3 {
     font-weight: 500;
     margin: 11rem 0 1em;
-    color: #333;
+    color: black;
 }
 #cocktails article p {    
     margin: 0;
