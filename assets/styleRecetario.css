@@ -137,6 +137,7 @@ h2.cocktails {
     align-self: flex-end;
 }
 
+/*Articles con alcohol*/
 #cocktails article.mojito {
     background-image: url(../assets/mojito.jpg);
     background-size: 100%;
@@ -163,6 +164,34 @@ h2.cocktails {
     background-position-y: -18px;
 }
 
+/*Articles sin alcohol*/
+#cocktails article.mojitoTe {
+    background-image: url(../assets/mojitoTe.jpg);
+    background-size: 100%;
+    background-position-y: -45px;
+}
+#cocktails article.paloma {
+    background-image: url(../assets/paloma.jpg);
+    background-size: 100%;
+    background-position-y: 0px;
+}
+#cocktails article.sanFrancisco {
+    background-image: url(../assets/sanFrancisco.webp);
+    background-size: 100%;
+    background-position-y: -36px;
+}
+#cocktails article.sidra {
+    background-image: url(../assets/sidra.jpg);
+    background-size: 100%;
+    background-position-y: 0px;
+}
+#cocktails article.frambuesa {
+    background-image: url(../assets/frambuesa.jpg);
+    background-size: 100%;
+    background-position-y: 0px;
+}
+
+/*botón articles*/
 button.cocktails{
     background-color: rgb(223, 20, 64);
     color: white;
@@ -174,7 +203,7 @@ button.cocktails{
     box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5);
     padding: 5px;
     margin-bottom: 2em;
-    margin-left: 40%;
+    margin-left: 43%;
  }
 
 /* FOOTER */
