@@ -1,5 +1,5 @@
 /*Container general*/
-main {background-color:lightblue;}
+main {background-color:white;}
 
   
 /* RESET */
@@ -67,7 +67,7 @@ nav a:hover {
     background-color: white;
     max-width: 2400px;
     max-height: 100vh;
-    padding-top: 70vh;
+    padding-top: 68vh;
 }
 
 .boton{
@@ -89,8 +89,93 @@ nav a:hover {
 
 /*MAIN*/
 main {
-   
+    padding: 3rem (1rem);
 }
+
+h2.cocktails {
+    text-align: center;
+    margin: 0 0 1em;
+}
+
+/*CARDS en main*/
+#cocktails {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+#cocktails article {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 1.0em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 290px;
+    box-shadow: 3px 7px 8px rgba(0,0,0,0.4);
+    background-repeat: no-repeat;
+    margin-bottom: 2em;
+    margin-left: 10px;
+}
+#cocktails article h3,
+#cocktails article p {
+    text-align: center;
+}
+#cocktails article h3 {
+    font-weight: 500;
+    margin: 11rem 0 1em;
+    color: #333;
+}
+#cocktails article p {    
+    margin: 0;
+    font-weight: 300;
+    color: #444;    
+}
+#cocktails article a {    
+    font-weight: 400;
+    padding-top: 2em;
+    color: purple;
+    align-self: flex-end;
+}
+
+#cocktails article.mojito {
+    background-image: url(../assets/mojito.jpg);
+    background-size: 100%;
+    background-position-y: 0px;
+}
+#cocktails article.piscoSour {
+    background-image: url(../assets/piscoSour.jpg);
+    background-size: 100%;
+    background-position-y: -50px;
+}
+#cocktails article.bloodyMary {
+    background-image: url(../assets/bloodyMary.jpg);
+    background-size: 100%;
+    background-position-y: -36px;
+}
+#cocktails article.negroniSbagliato {
+    background-image: url(../assets/negroniSbagliato.jpg);
+    background-size: 100%;
+    background-position-y: -15px;
+}
+#cocktails article.sexBeach {
+    background-image: url(../assets/sexBeach.jpg);
+    background-size: 100%;
+    background-position-y: -18px;
+}
+
+button.cocktails{
+    background-color: rgb(223, 20, 64);
+    color: white;
+    cursor: pointer;
+    border: 1px;
+    font-size: 16px; 
+    font-family: 'Poppins'; 
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5);
+    padding: 5px;
+    margin-bottom: 2em;
+    margin-left: 40%;
+ }
 
 /* FOOTER */
 .ft-main {
