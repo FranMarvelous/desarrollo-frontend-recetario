@@ -207,6 +207,11 @@ button.cocktails{
     margin-left: 43%;
  }
 
+ button.cocktails:hover {
+    background-color: rgb(151, 69, 87);
+    transform: translateY(-2px);
+  }
+
 /* FOOTER */
 .ft-main {
     padding: 1.25rem 1.875rem;
