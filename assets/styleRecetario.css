@@ -288,6 +288,74 @@ footer.copyright {
     text-align: center;
 }
 
+      /*MODALS*/
+      /*Efecto*/
+      .modalmask {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.8);
+        z-index: 99999;
+        opacity:0;
+        -webkit-transition: opacity 400ms ease-in;
+        -moz-transition: opacity 400ms ease-in;
+        transition: opacity 400ms ease-in;
+        pointer-events: none;
+        font-family: 'Poppins';
+    }
+    .modalmask:target {
+        opacity:1;
+        pointer-events: auto;
+    }
+    
+    /*Formato de la ventana*/
+    .modalbox{
+        width: 60%;
+        position: relative;
+        padding: 5px 20px 13px 20px;
+        background: rgb(226, 223, 223);
+        border-radius:3px;
+        -webkit-transition: all 500ms ease-in;
+        -moz-transition: all 500ms ease-in;
+        transition: all 500ms ease-in;
+         
+    }
+    
+    
+    /*Movimientos*/
+    .movedown {
+        margin: 0 auto;
+    }
+    .modalmask:target .movedown{       
+        margin:2% auto;
+    }
+    
+    /*Boton de cerrar*/
+    .close {
+        background: rgb(223, 20, 64);
+        color: #FFFFFF;
+        line-height: 25px;
+        position: absolute;
+        right: 1px;
+        text-align: center;
+        top: 1px;
+        width: 32px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius:3px;
+     
+    }
+     
+    .close:hover {
+        background: rgb(53, 2, 53);
+        color:white;
+    }
 
+    /*IMG MODAL*/
 
+    .imgModal{
+        width: 200px;
+    }
 
