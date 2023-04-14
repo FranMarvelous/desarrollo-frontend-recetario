@@ -312,7 +312,7 @@ footer.copyright {
     
     /*Formato de la ventana*/
     .modalbox{
-        width: 60%;
+        width: 80%;
         position: relative;
         padding: 5px 20px 13px 20px;
         background: rgb(226, 223, 223);
