@@ -208,7 +208,7 @@ button.cocktails{
  }
 
  button.cocktails:hover {
-    background-color: rgb(151, 69, 87);
+    background-color: rgb(44, 124, 190);
     transform: translateY(-2px);
   }
 
