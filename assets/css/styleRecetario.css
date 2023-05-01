@@ -59,7 +59,7 @@ nav a:hover {
 .slide {
     display: flex;
     justify-content: center;
-    background-image: url(../assets/headerPNG.png); 
+    background-image: url(../assets/img/headerPNG.png); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -140,54 +140,54 @@ h2.cocktails {
 
 /*Articles con alcohol*/
 #cocktails article.mojito {
-    background-image: url(../assets/mojito.jpg);
+    background-image: url(../assets/img/mojito.jpg);
     background-size: 100%;
     background-position-y: 0px;
 }
 #cocktails article.piscoSour {
-    background-image: url(../assets/piscoSour.jpg);
+    background-image: url(../assets/img/piscoSour.jpg);
     background-size: 100%;
     background-position-y: -50px;
 }
 #cocktails article.bloodyMary {
-    background-image: url(../assets/bloodyMary.jpg);
+    background-image: url(../assets/img/bloodyMary.jpg);
     background-size: 100%;
     background-position-y: -36px;
 }
 #cocktails article.negroniSbagliato {
-    background-image: url(../assets/negroniSbagliato.jpg);
+    background-image: url(../assets/img/negroniSbagliato.jpg);
     background-size: 100%;
     background-position-y: -15px;
 }
 #cocktails article.sexBeach {
-    background-image: url(../assets/sexBeach.jpg);
+    background-image: url(../assets/img/sexBeach.jpg);
     background-size: 100%;
     background-position-y: -18px;
 }
 
 /*Articles sin alcohol*/
 #cocktails article.mojitoTe {
-    background-image: url(../assets/mojitoTe.jpg);
+    background-image: url(../assets/img/mojitoTe.jpg);
     background-size: 100%;
     background-position-y: -45px;
 }
 #cocktails article.paloma {
-    background-image: url(../assets/paloma.jpg);
+    background-image: url(../assets/img/paloma.jpg);
     background-size: 100%;
     background-position-y: 0px;
 }
 #cocktails article.sanFrancisco {
-    background-image: url(../assets/sanFrancisco.webp);
+    background-image: url(../assets/img/sanFrancisco.webp);
     background-size: 100%;
     background-position-y: -36px;
 }
 #cocktails article.sidra {
-    background-image: url(../assets/sidra.jpg);
+    background-image: url(../assets/img/sidra.jpg);
     background-size: 100%;
     background-position-y: 0px;
 }
 #cocktails article.frambuesa {
-    background-image: url(../assets/frambuesa.jpg);
+    background-image: url(../assets/img/frambuesa.jpg);
     background-size: 100%;
     background-position-y: 0px;
 }
