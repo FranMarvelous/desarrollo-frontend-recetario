@@ -70,11 +70,6 @@ nav a:hover {
     padding-top: 68vh;
 }
 
-@media only screen and (max-width: 1000px){
- .slide {
-    background-image: url(/assets/img/headerPNGpequeno.png);
- }   
-}
 
 .btn{
     border: 1px solid #06410b; 

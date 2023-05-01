@@ -5,6 +5,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 /*FORM*/
@@ -19,7 +20,7 @@ body{
 
   .form {
     background-color: #DF2272;
-    width: 400px;
+    width: 25em;
     border-radius: 8px;
     padding: 20px 40px;
     box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
@@ -80,7 +81,7 @@ body{
 
   /*BOTON*/
   .submitBtn {
-    display: block;
+    display: inline;
     margin-left: auto;
     padding: 15px 30px;
     border: none;
@@ -90,6 +91,7 @@ body{
     cursor: pointer;
     font-size: 16px;
     margin-top: 30px;
+    margin-left: 2em;
   }
   
   .submitBtn:hover {
