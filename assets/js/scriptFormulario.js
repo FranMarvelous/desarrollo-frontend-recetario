@@ -18,7 +18,7 @@ const nameValidator = (element) => {
             style = 'border: solid 2px green';
         } else {
             style = 'border: solid 2px red';
-            alert('Ingresó caracteres no permitidos.');
+            alert('Caracteres no permitidos para nombre y/o apellido.');
         }
         element.setAttribute('style', style)
     })
