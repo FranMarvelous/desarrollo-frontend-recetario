@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./assets/js/login.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/stylesLogin.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <div class="signupFrm">
+        <form action="recetario.html" class="form" method="post">
+        <h1 class="title">¡Hola de nuevo!</h1>
+
+        <div class="inputContainer">
+            <input type="email" class="input" id="email" name="email" required placeholder="Ingresa tu email">
+            <label for="email" class="label">Email</label> 
+        </div>
+
+        <div class="inputContainer">
+            <input type="password" class="input" id="contrasena" name="contrasena" required minlength="8" placeholder="Ingrese contraseña">
+            <label for="contrasena" class="label">Contraseña</label>
+        </div>
+
+        <button type="submit" class="submitBtn">Iniciar sesión</button>
+        <input type="button" class="submitBtn" onclick="history.back()" name="volver atrás" value="Volver atrás">
+    </form>
+
+</body>
+</html>

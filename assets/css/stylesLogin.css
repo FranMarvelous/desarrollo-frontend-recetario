@@ -1,0 +1,118 @@
+body{
+    background-image: url(/assets/img/fondoRecetario.png);
+    background-size: 100%;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*FORM*/
+
+.signupFrm {
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    height: 100vh;
+    color: white;
+  }
+
+  .form {
+    background-color: #DF2272;
+    width: 25em;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    margin-right: 100px;
+    
+  }
+  
+  .title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  /*INPUTS*/
+
+  .inputContainer {
+    position: relative;
+    height: 45px;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+  }
+  
+  /*esconder el placeholder:*/
+  ::placeholder {
+    color: transparent;
+  }
+
+  .input:focus {
+    border: 2px solid rgb(8, 167, 196);
+  }
+
+  /*LABELS*/
+  .label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: #DF2272;
+    color: white;
+    font-size: 16px;
+    transition: 0,5s;
+    z-index: 0;
+  }
+
+  /*BOTON*/
+  .submitBtn {
+    display: inline;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: rgb(8, 167, 196);
+    color: rgb(0, 0, 0);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 1em;
+  }
+  
+  .submitBtn:hover {
+    background-color: #6770c5;
+    transform: translateY(-2px);
+  }
+
+    /*enmarcado de inputs:*/
+    .input:focus + .label {
+        top: -7px;
+        left: 3px;
+        z-index: 10;
+        font-size: 14px;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+      }
+
+      .input:not(:placeholder-shown)+ .label {
+        top: -7px;
+        left: 3px;
+        z-index: 10;
+        font-size: 14px;
+        font-weight: 600;
+      }
