@@ -59,7 +59,7 @@ nav a:hover {
 .slide {
     display: flex;
     justify-content: center;
-    background-image: url(/assets/img/headerPNG.png); 
+    background-image: url(../img/headerPNG.png); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
