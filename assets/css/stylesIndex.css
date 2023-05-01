@@ -65,12 +65,12 @@ nav a:hover {
     background-position: center center;
     min-height: 100vh; 
     background-color: white;
-    max-width: 2400px;
+    max-width: 100%;
     max-height: 100vh;
     padding-top: 68vh;
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 1000px){
  .slide {
     background-image: url(/assets/img/headerPNGpequeno.png);
  }   
