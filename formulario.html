@@ -4,50 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barvelous - El recetario</title>
+    <title>Contacto</title>
     <link rel="stylesheet" href="./assets/css/stylesFormulario.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <script src="./assets/js/scriptFormulario.js" defer></script>
+    <script src="./assets/js/formulario.js" defer></script>
 </head>
 <body>
     <div class="signupFrm">
         <form action="formulario.html" class="form" method="post">
-            <h1 class="title">Regístrate</h1>
+            <h1 class="title">Contáctanos</h1>
     
-            <div class="inputContainer">
-                <input type="email" class="input" id="email" name="email" required placeholder="Ingresa tu email">
-                <label for="email" class="label">Email</label> 
-            </div>
-        
             <div class="inputContainer">
                 <input type="text" class="input" id="name" name="name" required placeholder="Ingrese su nombre">
                 <label for="name" class="label">Nombre</label>  
             </div>
-
+            
             <div class="inputContainer">
                 <input type="text" class="input" id="lastname" name="lastname" required placeholder="Ingresa tu apellido">
                 <label for="lastname" class="label">Apellido</label>
             </div>
 
             <div class="inputContainer">
-                <input type="text" class="input" id="user" name="user" required placeholder="Ingresa un nombre de usuario">
-                <label for="user" class="label">Usuario</label>
+                <input type="email" class="input" id="email" name="email" required placeholder="Ingresa tu email">
+                <label for="email" class="label">Email</label>
+                <span></span> 
             </div>
-    
+        
             <div class="inputContainer">
-                <input type="password" class="input" id="password1" name="password1" required minlength="8" placeholder="Ingrese contraseña">
-                <label for="password" class="label">Contraseña</label>
-            </div>
-    
-            <div class="inputContainer">
-                <input type="password" class="input" id="password2" name="password2" required minlength="8" placeholder="Reingrese contraseña">
-                <label for="password" class="label">Confirme contraseña</label>
+                <input type="text" class="input" id="telefono" name="telefono" required placeholder="Ingresa tu telefono"/>
+                <label for="telefono" class="label">Teléfono</label>
+                <span></span>
             </div>
 
-            <label for="terms"><input id="terms" name="terms" type="checkbox" required> Soy mayor de 18 años.</label>
+            <div class="inputContainer">
+                <input type="text" class="input" id="direccion" name="direccion" required placeholder="Ingresa tu direccion"/>
+                <label for="direccion" class="label">Dirección</label>
+                <span></span>
+            </div>
+
+            <div class="inputContainer">
+                    <input type="text" class="input" id="asunto" name="asunto" required placeholder="Ingresa el asunto"/>
+                    <label for="asunto" class="label">Asunto</label>
+                    <span></span>
+            </div>
+
+            <div class="inputContainer">
+                <label for="mensaje" class="label">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" class="textarea" rows="4" required placeholder="Ingresa el mensaje"></textarea>
+                <span></span>
+            </div>
+
             <br>
-            <button type="submit" class="submitBtn">Guardar</button>
-            <input type="button" class="submitBtn" onclick="history.back()" name="volver atrás" value="Volver atrás">
+            <button type="submit" class="submitBtn">Enviar</button>
+            <input type="button" class="submitBtn" onclick="history.back()" name="volver" value="Volver">
         </form>
     </div>
 </body>

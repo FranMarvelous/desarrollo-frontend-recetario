@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./assets/css/stylesFormulario.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="./assets/js/registro.js" defer></script>
+</head>
+<body>
+    <div class="signupFrm">
+        <form action="formulario.html" class="form" method="post">
+            <h1 class="title">¡Regístrate!</h1>
+    
+            <div class="inputContainer">
+                <input type="email" class="input" id="email" name="email" required placeholder="Ingresa tu email">
+                <label for="email" class="label">Email</label> 
+            </div>
+    
+            <div class="inputContainer">
+                <input type="password" class="input" id="contrasena" name="contrasena" required minlength="8" placeholder="Ingrese contraseña">
+                <label for="password" class="label">Contraseña</label>
+            </div>
+    
+            <div class="inputContainer">
+                <input type="password" class="input" id="password2" name="password2" required minlength="8" placeholder="Reingrese contraseña">
+                <label for="password" class="label">Confirme contraseña</label>
+            </div>
+
+            <label for="terms"><input id="terms" name="terms" type="checkbox" required> Confirmo ser mayor de 18 años.</label>
+            <br>
+            <button type="submit" class="submitBtn">Guardar</button>
+            <input type="button" class="submitBtn" onclick="history.back()" name="volver atrás" value="Volver atrás">
+        </form>
+    </div>
+    
+    <script>
+        const formulario = document.querySelector("form");
+        formulario.addEventListener("submit", async (submitEvent) => {
+            submitEvent.preventDefault();
+            //currentTarget: es lo mismo que la constante "form" que está arriba
+            // representa el elemento HTML que disparó el evento
+            const formElement  = submitEvent.currentTarget;
+            const formData     = new FormData( formElement );
+            // con formData.get ( nombreCampoForm )
+            const email        = formData.get("email");
+            const contrasena   = formData.get("contrasena");
+            const nuevoUsuario = {
+                email,
+                contrasena 
+            };
+
+            const baseUrl     = "http://localhost:3000";
+            const url         = baseUrl + "/registro"; //seteado en fastify - aqui van los datos
+            const fetchConfig = {    
+                method: 'POST',
+                headers: { 
+                    'Content-Type': 'Application/json'
+                },
+                body: JSON.stringify(nuevoUsuario)
+            };
+
+            try{
+            const respuesta = await fetch(url, fetchConfig);
+                // si la respuesta no es ok:
+                if( !respuesta.ok ){
+                    //gestionar error o mensajes recibidos
+                    console.error("La respuesta no está OK");
+                    return;
+                }
+            
+                //en caso de exito:
+                const objetoJson = await respuesta.json();
+                console.dir(objetoJson);
+            
+            } catch (error) {
+                //gestion de errores
+                console.error(error.code);
+                console.error(error.message);
+            }
+        });
+    </script>
+</body>
+</html>

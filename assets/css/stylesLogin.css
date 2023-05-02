@@ -90,7 +90,7 @@ body{
     border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 30px;
+    margin-top: 1em;
     margin-left: 1em;
   }
   
@@ -115,4 +115,18 @@ body{
         z-index: 10;
         font-size: 14px;
         font-weight: 600;
+      }
+
+      /*anchor hacia registro*/
+
+      a{
+        color: rgb(252, 247, 248);;
+        cursor: pointer;
+        font-size: 16px; 
+        font-family: 'Poppins';
+      }
+
+      a:hover {
+        color: rgb(8, 167, 196);
+        justify-content: center;
       }

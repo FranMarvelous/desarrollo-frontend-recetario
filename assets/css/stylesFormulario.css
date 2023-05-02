@@ -1,5 +1,5 @@
 body{
-    background-image: url(/assets/img/fondoRecetario.png);
+    background-image: url(../img/fondoRecetario.png);
     background-size: 100%;
     font-family: 'Poppins';
     box-sizing: border-box;
@@ -99,20 +99,63 @@ body{
     transform: translateY(-2px);
   }
 
-    /*enmarcado de inputs:*/
-    .input:focus + .label {
-        top: -7px;
-        left: 3px;
-        z-index: 10;
-        font-size: 14px;
-        font-weight: 600;
-        color: rgb(0, 0, 0);
-      }
+/*enmarcado de inputs:*/
+.input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+  }
 
-      .input:not(:placeholder-shown)+ .label {
-        top: -7px;
-        left: 3px;
-        z-index: 10;
-        font-size: 14px;
-        font-weight: 600;
-      }
+  .input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+/*Text area*/
+.textarea {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #DADCE0;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: white;
+  z-index: 1;
+}
+
+  /*esconder el placeholder:*/
+  .textarea::placeholder {
+    color: black;
+    font-family: 'Poppins';
+  }
+
+  .textarea:focus {
+    border: 2px solid rgb(8, 167, 196);
+  }
+
+.textarea:focus + .label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+
+.textarea:not(:placeholder-shown)+ .label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+}
