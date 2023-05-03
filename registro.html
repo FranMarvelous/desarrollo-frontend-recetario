@@ -7,7 +7,7 @@
     <title>Registro</title>
     <link rel="stylesheet" href="./assets/css/stylesFormulario.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <script src="./assets/js/registro.js" defer></script>
+
 </head>
 <body>
     <div class="signupFrm">
@@ -74,6 +74,7 @@
                 //en caso de exito:
                 const objetoJson = await respuesta.json();
                 console.dir(objetoJson);
+                window.location = 'login.html';
             
             } catch (error) {
                 //gestion de errores

@@ -8,12 +8,12 @@
     
     <link rel="stylesheet" href="./assets/css/stylesLogin.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <script src="./assets/js/login.js" defer></script>
+    
 </head>
 <body>
     <div class="signupFrm">
         <form action="recetario.html" class="form" method="post">
-        <h1 class="title">¡Hola de nuevo!</h1>
+        <h1 class="title">¡Inicia tu sesión!</h1>
 
         <div class="inputContainer">
             <input type="email" class="input" id="email" name="email" required placeholder="Ingresa tu email">
@@ -29,8 +29,62 @@
         <input type="button" class="submitBtn" onclick="history.back()" name="volver atrás" value="Volver atrás">
         <br>
         <br>
-        <a href="./registro.html">No tengo cuenta</a>
+        <p>¿No tienes cuenta?<a href="./registro.html"> Regístrate!</a></p>
+        
     </form>
+
+    <script>
+        const formulario = document.querySelector("form");
+        formulario.addEventListener("submit", async (submitEvent) => {
+            submitEvent.preventDefault();
+            //currentTarget: es lo mismo que la constante "form" que está arriba
+            // representa el elemento HTML que disparó el evento
+            const formElement  = submitEvent.currentTarget;
+            const formData     = new FormData( formElement );
+            // con formData.get ( nombreCampoForm )
+            const email        = formData.get("email");
+            const contrasena   = formData.get("contrasena");
+            const nuevoUsuario = {
+                email,
+                contrasena 
+            };
+
+            const baseUrl     = "http://localhost:3000";
+            const url         = baseUrl + "/login"; //seteado en fastify - aqui van los datos
+            const fetchConfig = {    
+                method: 'POST',
+                headers: { 
+                    'Content-Type': 'Application/json'
+                },
+                body: JSON.stringify(nuevoUsuario)
+            };
+
+            try{
+            const respuesta = await fetch(url, fetchConfig);
+                // si la respuesta no es ok:
+                if( !respuesta.ok ){
+                    //gestionar error o mensajes recibidos
+                    console.error("La respuesta no está OK");
+                    return;
+                }
+            
+                //en caso de exito:
+                const objetoJson = await respuesta.json();
+                console.dir(objetoJson);
+
+                const usuario = objetoJson.usuario;
+                //guardo datos del usuario y TOKEN
+                localStorage.setItem('usuario', JSON.stringify(usuario));
+                //se redirige a pagina privada
+                window.location = 'recetario.html';
+            
+            } catch (error) {
+                //gestion de errores
+                console.error(error.code);
+                console.error(error.message);
+            }
+        });
+    </script>
 
     
 </body>

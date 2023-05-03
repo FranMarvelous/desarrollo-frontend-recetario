@@ -1,7 +1,6 @@
-const emailInput = document.getElementById('email');
-
 const {app} = require("./firebase");
 const { getAuth, signInWithEmailAndPassword } = require("firebase/auth");
+
 module.exports = async (request, response) => {
     const {email, contrasena} = request.body;
 
@@ -26,21 +25,3 @@ module.exports = async (request, response) => {
     }
 };
 
-/* validación formato mail correcto*/
-const emailValidator = (element) => {
-  element.addEventListener('change', () => {
-      const inputValue = element.value;
-      const testRegex = /\S+@\S+\.[a-zA-Z]{2,}$/i;
-      const condicion = testRegex.test(inputValue);
-      let style;
-      
-      if(condicion) {
-          style = 'border: solid 2px green';
-      } else {
-          style = 'border: solid 2px red';
-          alert('Caracteres no permitidos para email.');
-      }
-      element.setAttribute('style', style)
-  })
-}
-emailValidator(emailInput);

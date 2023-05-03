@@ -7,6 +7,35 @@
     <title>Barvelous - El Recetario</title>
     <link rel="stylesheet" href="./assets/css/stylesRecetario.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <script>
+        const storageUsuario = localStorage.getItem("usuario"); //viene como string
+        if(storageUsuario == null){
+            //si no está autentificado
+            window.location = "login.html";
+            alert('Usuario no autentificado, reingrese.');
+        }
+        const objetoUsuario = JSON.parse(storageUsuario);
+        const token         = objetoUsuario.user.stsTokenManager.accessToken;
+
+        const baseUrl       = 'http://localhost:3000';
+        const url           = baseUrl + '/usuario/checktoken';
+        fetch(url, {
+            method : 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authentication': 'Bearer'+token
+            },
+            body:  '{}' 
+        }).then( respuesta => {
+            if( !respuesta.ok ) {
+            throw new Error("Token no válido");
+            }
+        }).catch(error => {
+            window.location = "login.html";
+        });
+    </script>
+</head>
 <body>
     <header>
         <nav>
@@ -15,7 +44,6 @@
         
         <nav>
                 <a href="https://www.instagram.com/barvelous.cl" target="_blank">Barvelous</a>                
-                <a href="#">Mi perfil</a>
 
         </nav>
     </header>
@@ -131,6 +159,9 @@
             <ul>
                 <a href="https://www.instagram.com/barvelous.cl">
                     <li>Instagram</li>
+                </a>
+                <a href="./formulario.html">
+                    <li>Contacto</li>
                 </a>
                 <a href="mailto:marvelousbartender@gmail.com?Subject=Hola%20barvelous%20cocktails!">
                     <li>Email</li>
