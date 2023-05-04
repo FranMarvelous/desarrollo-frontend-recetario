@@ -12,7 +12,14 @@ fastify.get('/', async (request, reply) => {
 
 fastify.post('/registro', require('./src/registro'));
 fastify.post('/login', require('./src/login'));
-fastify.post('/usuario/checktoken', require('./src/checktoken'));
+fastify.get('/usuario/checktoken', require('./src/checktoken'));
+
+/* API para CRUD categorias*/
+fastify.route({
+  method: ['GET', 'POST', 'PUT', 'DELETE'],
+  url: '/categoria',
+  handler: require('./src/categoria')
+});
 
 
 // Run the server!

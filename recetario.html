@@ -9,30 +9,31 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
     <script>
-        const storageUsuario = localStorage.getItem("usuario"); //viene como string
-        if(storageUsuario == null){
-            //si no está autentificado
+const storageUsuario = localStorage.getItem("usuario"); // string 
+        if( storageUsuario == null ) {
+            // si no está autenticado 
             window.location = "login.html";
-            alert('Usuario no autentificado, reingrese.');
         }
+
         const objetoUsuario = JSON.parse(storageUsuario);
         const token         = objetoUsuario.user.stsTokenManager.accessToken;
 
         const baseUrl       = 'http://localhost:3000';
         const url           = baseUrl + '/usuario/checktoken';
         fetch(url, {
-            method : 'POST',
+            method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
-                'Authentication': 'Bearer'+token
+                'Authorization': 'Bearer '+token
             },
-            body:  '{}' 
+            //body: '{}'
         }).then( respuesta => {
             if( !respuesta.ok ) {
-            throw new Error("Token no válido");
+                throw new Error("Token no válido");
             }
+            respuesta.json();
         }).catch(error => {
-            window.location = "login.html";
+            window.location = "login.html"; 
         });
     </script>
 </head>

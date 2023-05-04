@@ -1,6 +1,6 @@
-const {admin} = require('./firebase');
+const { admin } = require('./firebase');
 
-module.exports = async (req, res) => {
+module.exports = async (req, res) => {    
     try {
         const headerAutorizacion = req.headers.authorization;
         const token = headerAutorizacion.split(' ')[1];        
