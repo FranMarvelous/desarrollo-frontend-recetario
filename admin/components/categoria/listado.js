@@ -55,15 +55,14 @@ export default function CategoriaListado({categorias, setCategorias}) {
                     </tr>
                 </thead>
                 <tbody>
-                    {categorias.map( categoria => (
+                    {categorias.map((categoria) => (
                         <tr key={categoria.id}>
                             <td>{categoria.receta}</td>
-                            <td>{categoria.Tipo}</td>
-                            <td>{categoria.Nota}</td>
+                            <td>{categoria.tipo}</td>
+                            <td>{categoria.nota}</td>
                             <td>{categoria.descripcion}</td>
                             <td>
-                                <button>Editar</button>
-                                <button onClick={ () => eliminar(categoria) }>Eliminar</button>
+                            <button className="eliminar" onClick={() => eliminar(categoria)}>Eliminar</button>
                             </td>
                         </tr>
                     ))}
@@ -72,3 +71,4 @@ export default function CategoriaListado({categorias, setCategorias}) {
         </>
     );
 }
+
