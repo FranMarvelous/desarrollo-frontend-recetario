@@ -66,9 +66,15 @@ nav a:hover {
     background-position: center center;
     background-color: white;
     max-width: 100%;
-    *min-height: 100vh; 
+    min-height: 100vh; 
     max-height: 100vh;
     padding-top: 68vh;
+}
+
+@media only screen and (max-width: 780px){
+    .slide{
+        min-height: 10vh;
+    }
 }
 
 
@@ -88,12 +94,16 @@ nav a:hover {
     margin-right: 60%;
 }
 
-
 .btn:hover {
     transform: translateY(-2px);
   }
 
-
+@media only screen and (max-width: 780px){
+    .btn{
+        margin-right: 0%;
+        margin-bottom: 2%;
+    }
+}
 
 /* FOOTER */
 .ft-main {

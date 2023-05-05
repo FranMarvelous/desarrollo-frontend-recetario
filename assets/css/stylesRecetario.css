@@ -63,29 +63,20 @@ nav a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 100vh; 
+    min-height:100vh; 
     background-color: white;
     max-width: 2400px;
-    max-height: 100vh;
+    max-height: 1000vh;
     padding-top: 68vh;
 }
 
-.boton{
-    border: 1px solid #06410b; 
-    padding: 10px; /*espacio alrededor texto*/
-    background: linear-gradient(to right, #0b6817, rgb(61, 167, 61)); 
-    color: #ffffff; 
-    text-decoration: none;
-    text-align: center;
-    font-size: 16px; 
-    font-family: 'Poppins'; 
-    border-radius: 8px; /*bordes redondos*/
-    width: 10em;
-    height: 2em;
-    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5); /*sombra*/
-    margin-top: 140px;
-    margin-right: 70%;
+@media only screen and (max-width: 780px){
+    .slide{
+        min-height: 10vh;
+    }
 }
+
+
 
 /*MAIN*/
 main {
@@ -94,7 +85,7 @@ main {
 
 h2.cocktails {
     text-align: center;
-    margin: 0 0 1em;
+    
 }
 
 /*CARDS en main*/
@@ -105,8 +96,8 @@ h2.cocktails {
 }
 #cocktails article {
     border: 1px solid gray;
-    border-radius: 10px;
-    padding: 1.0em 2em;
+    border-radius: 8px;
+    padding: 1em 2em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -117,6 +108,7 @@ h2.cocktails {
     margin-left: 10px;
     margin-right: 10px;
 }
+
 #cocktails article h3,
 #cocktails article p {
     text-align: center;

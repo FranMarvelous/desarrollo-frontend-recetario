@@ -51,11 +51,14 @@ const storageUsuario = localStorage.getItem("usuario"); // string
     </header>
 
     <section class="slide">
+        
     </section>
 
     <main>
         <h2 class="cocktails">Cocktails (con alcohol)</h2>
         <section id="cocktails">
+
+            <!-- CARD: MOJITO -->
             <article class="mojito">
                 <h3>Mojito Tradicional</h3>
                 <p>Bebida originaria de Cuba preparada con ron, jugo de limón, agua, hielo, menta o hierbabuena, y azúcar.</p>
@@ -66,18 +69,18 @@ const storageUsuario = localStorage.getItem("usuario"); // string
                     <a href="#close" title="Close" class="close">X</a>
                     <h2>Mojito Tradicional</h2>
                     <img class="imgModal" src="./assets/img/mojito.jpg" alt="Mojito tradicional">
-                    <p>ingredientes: </p>
+                    <p><strong>Ingredientes: </strong></p>
                     <ul>
                         <li>Hojas de menta o hierbabuena</li>
-                        <li>2 oz jarabe de goma</li>
-                        <li>2 oz jugo de limón</li>
+                        <li>2 onzas jarabe de goma</li>
+                        <li>2 onzas jugo de limón</li>
                         <li>rodajas de limón</li>
-                        <li>2 oz de ron blanco</li>
+                        <li>2 onzas de ron blanco</li>
                         <li>Agua con gas</li>
                         <li>Hielo frappé (picado)</li>
                     </ul>
                     
-                    <p>preparación:</p>
+                    <p><strong>Preparación:</strong></p>
                     <ol>
                         <li>Comenzaremos usando un vaso tipo Collins añadimos las hojas de menta dando un leve apretón entre las manos para despertar sus aromas.</li>
                         <li>Luego vamos incorporar el jarabe de goma con los trozos de limón. Con la ayuda de un mortero maceramos lentamente teniendo cuidado de no pisotear demasiado y destrozar las hojas, esto puede hacer amargo nuestro cóctel.</li>
@@ -89,57 +92,294 @@ const storageUsuario = localStorage.getItem("usuario"); // string
                 </div>
             </div>
 
-
+            <!-- CARD: BLOODY MARY -->
             <article class="bloodyMary">
                 <h3>Bloody Mary</h3>
                 <p>Bebida con una historia muy particular, conocida por su particular ingrediente jugo de tomate, rama de apio y su combinación con vodka; este aperitivo tiene un sazón muy especial.</p>
-                <input class="btn" type="button" onclick="location.href='#modal';" value="Ver receta"/>
-            </article>            
+                <input class="btn" type="button" onclick="location.href='#modal2';" value="Ver receta"/>
+            </article> 
+            <div id="modal2" class="modalmask" style="overflow-y: scroll;">
+                <div class="modalbox movedown">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Bloody Mary</h2>
+                    <img class="imgModal" src="./assets/img/bloodyMary.jpg" alt="Bloody mary">
+                    <p><strong>Ingredientes: </strong></p>
+                    <ul>
+                        <li>50-60 ml de vodka</li>
+                        <li>180 ml de jugo de tomate</li>
+                        <li>15 ml de jugo de limón</li>
+                        <li>1 pizca de sal de apio (o corriente)</li>
+                        <li>1 toque de pimienta negra recién molida</li>
+                        <li>3 gotas de salsa Worcestershire</li>
+                        <li>2 gotitas de salsa Tabasco</li>
+                    </ul>
+                    
+                    <p><strong>Preparación:</strong></p>
+                    <ol>
+                        <li>Añade el vodka, la salsa Worcestershire, el Tabasco y el jugo de limón en un vaso grande.</li>
+                        <li>Agrega la sal de apio y la pimienta negra recién molida.</li>
+                        <li>Añade el jugo de tomate y mezcla todo bien.</li>
+                        <li>Sirve en un vaso con hielo y decora con un tronco de apio y una rodaja de limón.</li>
+                    </ol>
+                    <p><strong>A disfrutar!</strong></p>
+                </div>
+            </div>
+            
+            <!-- CARD: PISCO SOUR -->
             <article class="piscoSour">
                 <h3>Pisco Sour</h3>
                 <p>Bebida originaria de Chile o Perú preparada con pisco de origen, jugo de limón y azúcar.</p>
-                <input class="btn" type="button" onclick="location.href='#modal';" value="Ver receta"/>
+                <input class="btn" type="button" onclick="location.href='#modal3';" value="Ver receta"/>
             </article>
+            <div id="modal3" class="modalmask" style="overflow-y: scroll;">
+                <div class="modalbox movedown">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Pisco Sour</h2>
+                    <img class="imgModal" src="./assets/img/piscoSour.jpg" alt="Pisco sour">
+                    <p><strong>Ingredientes: </strong></p>
+                    <ul>
+                        <li>3 onzas de pisco</li>
+                        <li>1 onza de jugo de limón fresco</li>
+                        <li>1 onza de jarabe simple (mezcla de agua y azúcar) o jarabe de goma</li>
+                        <li>1 clara de huevo</li>
+                        <li>Hielo</li>
+                    </ul>
+                    
+                    <p><strong>Preparación:</strong></p>
+                    <ol>
+                        <li>Agrega el pisco, el jugo de limón, el jarabe simple y la clara de huevo en una coctelera.</li>
+                        <li>Agita bien durante unos minutos.</li>
+                        <li>Agrega hielo y agita nuevamente.</li>
+                        <li>Sirve en un vaso o copa flauta y decora con un tronco de apio y una rodaja de limón.</li>
+                    </ol>
+                    <p><strong>A disfrutar!</strong></p>
+                </div>
+            </div>
+
+            <!-- CARD: Negroni Sbagliato -->
             <article class="negroniSbagliato">
                 <h3>Negroni Sbagliato</h3>
                 <p>Un Negroni Sbagliato es básicamente un cóctel italiano donde se mezcla diferentes alcoholes: Campari con vermú dulce y prosecco en partes iguales.</p>
-                <input class="btn" type="button" onclick="location.href='#modal';" value="Ver receta"/>
+                <input class="btn" type="button" onclick="location.href='#modal4';" value="Ver receta"/>
             </article>
+            <div id="modal4" class="modalmask" style="overflow-y: scroll;">
+                <div class="modalbox movedown">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Negroni Sbagliato</h2>
+                    <img class="imgModal" src="./assets/img/negroniSbagliato.jpg" alt="Negroni Sbagliato">
+                  <p><strong>Ingredientes: </strong></p>
+                    <ul>
+                        <li>1 onza de Campari</li>
+                        <li>1 onza de vermut dulce</li>
+                        <li>1 onza de Prosecco</li>
+                        <li>Piel de naranja</li>
+                        <li>Hielo</li>
+                    </ul>
+                    
+                    <p><strong>Preparación:</strong></p>
+                    <ol>
+                        <li>Agrega todos los ingredientes a tu coctelera excepto la piel de naranja.</li>
+                        <li>Mezcla durante unos pocos segundos.</li>
+                        <li>Agrega hielo y agita nuevamente.</li>
+                        <li>Sirve en una copa con hielo y la piel de naranja.</li>
+                    </ol>
+                    <p><strong>A disfrutar!</strong></p>
+                </div>
+            </div>
+
+             <!-- CARD: sex on the beach -->
             <article class="sexBeach">
                 <h3>Sex on The Beach</h3>
                 <p>Bajo su sugerente nombre se encuentra un cóctel afrutado, dulce y muy goloso donde el alcohol es disimulado por su dulzura.</p>
-                <input class="btn" type="button" onclick="location.href='#modal';" value="Ver receta"/>
+                <input class="btn" type="button" onclick="location.href='#modal5';" value="Ver receta"/>
             </article>
+            <div id="modal5" class="modalmask" style="overflow-y: scroll;">
+                <div class="modalbox movedown">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Sex on the beach</h2>
+                    <img class="imgModal" src="./assets/img/sexBeach.jpg" alt="Sex on the beach">
+                    <p><strong>Ingredientes: </strong></p>
+                    <ul>
+                        <li>2 onzas jugo de arandano</li>
+                        <li>3 onzas jugo de naranja</li>
+                        <li>1 onza licor de durazno</li>
+                        <li>1 onza de vodka</li>
+                        <li>Hielo</li>
+                    </ul>
+                    
+                    <p><strong>Preparación:</strong></p>
+                    <ol>
+                        <li>Mezcle todos los ingredientes en un vaso relleno de hielo. Decore el vaso con una cereza.</li>
+                    </ol>
+                    <p><strong>A disfrutar!</strong></p>
+                </div>
+            </div>
+
         </section>
         <button class="cocktails" type="button">Cargar más Cocktails</button>
 
         <h2 class="cocktails">Mocktails (sin alcohol)</h2>
         <section id="cocktails">
+
+            <!-- CARD: Mojito Té -->
             <article class="mojitoTe">
                 <h3>Mojito con té verde</h3>
                 <p>Su sabor es muy parecido al del mojito convencional, pero no tiene alcohol y resulta mucho más ligero y saludable.</p>
-                <input class="btn" type="button" onclick="location.href='#modal';" value="Ver receta"/>
+                <input class="btn" type="button" onclick="location.href='#modal6';" value="Ver receta"/>
             </article>
+            <div id="modal6" class="modalmask" style="overflow-y: scroll;">
+                <div class="modalbox movedown">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Mojito con té verde</h2>
+                    <img class="imgModal" src="./assets/img/mojitoTe.jpg" alt="Mojito con té verde">
+                    <p><strong>Ingredientes: </strong></p>
+                    <ul>
+                        <li>2 bolsitas de té verde</li>
+                        <li>1/4 de taza de hojas de menta fresca</li>
+                        <li>1 lima, cortada en cuartos</li>
+                        <li>1 cucharada de miel</li>
+                        <li>Agua con gas</li>
+                        <li>Hielo</li>
+                    </ul>
+                    
+                    <p><strong>Preparación:</strong></p>
+                    <ol>
+                        <li>Preparar el té verde según las instrucciones del paquete y dejar enfriar.</li>
+                        <li>En un vaso grande, añadir las hojas de menta, los cuartos de lima y la cucharada de miel.</li>
+                        <li>Machacar suavemente los ingredientes en el vaso con un mortero o cuchara.</li>
+                        <li>Llenar el vaso con hielo y agregar el té verde.</li>
+                        <li>Completar con agua con gas y revolver bien..</li>
+                        <li>Decorar con una ramita de menta y un cuarto de lima</li>
+                    </ol>
+                    <p><strong>A disfrutar!</strong></p>
+                </div>
+            </div>
+
+            <!-- CARD: Paloma -->
             <article class="paloma">
                 <h3>Paloma</h3>
                 <p>Esta versión de uno de los cocteles más populares de México es la fresca respuesta cuando te preguntes ¿qué bebida le puedo dar a toda mi familia?</p>
-                <input class="btn" type="button" onclick="location.href='#modal';" value="Ver receta"/>
-            </article>            
+                <input class="btn" type="button" onclick="location.href='#modal7';" value="Ver receta"/>
+            </article>
+            <div id="modal7" class="modalmask" style="overflow-y: scroll;">
+                <div class="modalbox movedown">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Paloma</h2>
+                    <img class="imgModal" src="./assets/img/paloma.jpg" alt="Paloma">
+                    <p><strong>Ingredientes: </strong></p>
+                    <ul>
+                        <li>75 ml jugo de pomelo</li>
+                        <li>20 ml jugo de limón</li>
+                        <li>20 ml sirup simple o jarabe de goma </li>
+                        <li>Agua con gas</li>
+                        <li>Sal para el borde del vaso</li>
+                        <li>Media rodaja de pomelo para adornar</li>
+                        <li>Hielo</li>
+                    </ul>
+                    
+                    <p><strong>Preparación:</strong></p>
+                    <ol>
+                        <li>Frota el borde del vaso con una rodaja de pomelo y sumérgela en sal.</li>
+                        <li>Pon hielo en una coctelera, y luego: jugo de pomelo, jugo de limón, goma y agita fuertemente unos segundos.</li>
+                        <li>Pon hielo en el vaso mediano y vierte todo el líquido de la coctelera en él. </li>
+                        <li>Rellena con un poco de agua con gas, decora con un trozo de pomelo.</li>
+                    </ol>
+                    <p><strong>A disfrutar!</strong></p>
+                </div>
+            </div>
+            
+            <!-- CARD: san francisco -->
             <article class="sanFrancisco">
                 <h3>San Francisco</h3>
                 <p>El San Francisco es un cóctel sin alcohol originario de la ciudad homónima en California, cuyos ingredientes son jugos de diversas frutas y granadina, un sirope de granada y azúcar.</p>
-                <input class="btn" type="button" onclick="location.href='#modal';" value="Ver receta"/>
+                <input class="btn" type="button" onclick="location.href='#modal8';" value="Ver receta"/>
             </article>
+            <div id="modal8" class="modalmask" style="overflow-y: scroll;">
+                <div class="modalbox movedown">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>San Francisco</h2>
+                    <img class="imgModal" src="./assets/img/sanFrancisco.webp" alt="San Francisco">
+                    <p><strong>Ingredientes: </strong></p>
+                    <ul>
+                        <li>1/2 taza de jugo de naranja</li>
+                        <li>1/2 taza de jugo de piña</li>
+                        <li>1/4 taza de jugo de limón</li>
+                        <li>1/4 taza de granadina</li>
+                        <li>1/4 taza de agua con gas</li>
+                        <li>Rodaja de naranja para decorar</li>
+                        <li>Hielo</li>
+                    </ul>
+                    
+                    <p><strong>Preparación:</strong></p>
+                    <ol>
+                        <li>Mezcla el jugo de naranja, jugo de piña, jugo de limón y granadina en una coctelera.</li>
+                        <li>Agita bien la mezcla con hielo.</li>
+                        <li>Sirve en un vaso con hielo y agrega agua con gas.</li>
+                        <li>Decora con una rodaja de naranja.</li>
+                    </ol>
+                    <p><strong>A disfrutar!</strong></p>
+                </div>
+        </div>
+
+            <!-- CARD: te con sidra -->
             <article class="sidra">
                 <h3>Té helado con sidra</h3>
                 <p>Este iced tea se prepara como una tradicional infusión caliente, pero con el refrescante toque de líquido frío y hielo a tu gusto.</p>
-                <input class="btn" type="button" onclick="location.href='#modal';" value="Ver receta"/>
+                <input class="btn" type="button" onclick="location.href='#modal9';" value="Ver receta"/>
             </article>
+            <div id="modal9" class="modalmask" style="overflow-y: scroll;">
+                <div class="modalbox movedown">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Té helado con sidra</h2>
+                    <img class="imgModal" src="./assets/img/sidra.jpg" alt="Té helado con sidra">
+                    <p><strong>Ingredientes: </strong></p>
+                    <ul>
+                        <li>1 cucharada Syrup de canela</li>
+                        <li>1 cucharada Syrup de Jengibre</li>
+                        <li>200ml de Sidra de manzana (recién salida del refrigerador)</li>
+                        <li>Azúcar de tu gusto, para el borde de la copa</li>
+                        <li>Hielo</li>
+                    </ul>
+                    
+                    <p><strong>Preparación:</strong></p>
+                    <ol>
+                        <li>Humedece el borde del vaso con sidra y sumérgela en azúcar.</li>
+                        <li>Luego en el vaso las cucharadas de syrup y mézclalas suavemente y vierte la sidra y sobre ella agrega los hielos.</li>
+                    </ol>
+                    <p><strong>A disfrutar!</strong></p>
+                </div>
+        </div>
+
+            <!-- CARD: mocky frambuesa -->
             <article class="frambuesa">
                 <h3>Mocktail de Frambuesa</h3>
                 <p>Si de cocteles sin alcohol se trata, Sprite® es la bebida ideal. Combínala con frutos rojos y el resultado hará una fiesta en tu boca.</p>
-                <input class="btn" type="button" onclick="location.href='#modal';" value="Ver receta"/>
+                <input class="btn" type="button" onclick="location.href='#modal10';" value="Ver receta"/>
             </article>
+            <div id="modal10" class="modalmask" style="overflow-y: scroll;">
+                <div class="modalbox movedown">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Mocktail de Frambuesa</h2>
+                    <img class="imgModal" src="./assets/img/frambuesa.jpg" alt="Mocktail de Frambuesa">
+                    <p><strong>Ingredientes: </strong></p>
+                    <ul>
+                        <li>½ taza de jugo de limón</li>
+                        <li>2 tazas de frambuesas</li>
+                        <li>1 litro de Sprite®</li>
+                        <li>Hojas de menta para decorar</li>
+                        <li>Hielo</li>
+                    </ul>
+                    
+                    <p><strong>Preparación:</strong></p>
+                    <ol>
+                        <li>Coloca hielo al gusto en 4 vasos y agrega el jugo de los limones de manera equitativa.</li>
+                        <li>Licua las frambuesas y cuela el jugo en cada vaso hasta llenarlo a la mitad.</li>
+                        <li>Termina de llenar los vasos con Sprite® y mézclalo con un agitador.</li>
+                        <li>Decora con hojitas de menta y algunas frambuesas, ¡y listo! A disfrutar.</li>
+                    </ol>
+                    <p><strong>A disfrutar!</strong></p>
+                </div>
+        </div>
         </section>
 
         <button class="cocktails" type="button">Cargar más Mocktails</button>
