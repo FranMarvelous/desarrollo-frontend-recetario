@@ -1,15 +1,13 @@
 # Recetario para Barvelous Cocktails
 
 ## Descripción: 
-Barvelous - El Recetario es una app web con una amplia variedad de recetas de deliciosos cocktails con y sin alcohol, fácil y amigable de utilizar. Las recetas están alojadas de manera estática en cards dentro del html, en una futura iteración podrán ser generadas de manera dinámica.
+Barvelous - El Recetario es una app web con una amplia variedad de recetas de deliciosos cocktails con y sin alcohol, fácil y amigable de utilizar.
+Las recetas están alojadas de manera estática en cards dentro del html, en una futura iteración podrán ser generadas de manera dinámica.
 En su primera versión el usuario deberá registrarse para tener una sesión privada en la que pueda acceder a las recetas, y documentar en una tabla aquellas recetas que ya haya probado.
 En una futura versión podrán almacenarse las recetas favoritas escogidas por el usuario dentro de su perfil para acceder más facilmente a ellas.
 
 ## Prototipo desarrollado en Figma:
 https://www.figma.com/proto/L3bD0UDNqP525iKUzPlbaM/Recetario-Barvelous?node-id=0-1
-
-## Despliegue en github pages:
-https://franmarvelous.github.io/desarrollo-frontend-recetario/index.html
 
 ## Demo
 
@@ -22,6 +20,7 @@ https://franmarvelous.github.io/desarrollo-frontend-recetario/index.html
 - Login: https://franmarvelous.github.io/desarrollo-frontend-recetario/login.html  
 
 Puede crear usuario propio mediante registro, o bien utilizar:
+
 **usuario:** user@example.com  
 **contraseña:** 12345678 
 
