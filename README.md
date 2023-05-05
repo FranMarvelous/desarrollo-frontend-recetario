@@ -17,9 +17,10 @@ https://www.figma.com/proto/L3bD0UDNqP525iKUzPlbaM/Recetario-Barvelous?node-id=0
 - Index: https://franmarvelous.github.io/desarrollo-frontend-recetario/index.html
 - Contacto: https://franmarvelous.github.io/desarrollo-frontend-recetario/formulario.html
 - Registro: https://franmarvelous.github.io/desarrollo-frontend-recetario/registro.html
+- Login: https://franmarvelous.github.io/desarrollo-frontend-recetario/login.html
 
 ### Zona Privada
-- Login: https://franmarvelous.github.io/desarrollo-frontend-recetario/login.html  
+- Recetario: https://franmarvelous.github.io/desarrollo-frontend-recetario/recetario.html  
 
 Puede crear usuario propio mediante registro, o bien utilizar:
 
@@ -39,6 +40,11 @@ En la parte privada, los únicos botones que no tienen funcionalidad son los de 
 | ----------------- | ------------------------------------------------------------------ |
 | Púrpura | ![#54067E](https://via.placeholder.com/10/54067E?text=+) #54067E |
 | Fucsia  | ![#DF2272](https://via.placeholder.com/10/DF2272?text=+) #DF2272 |
+
+## Tecnologías utilizadas:
+- Html, css, JavaScript.
+- Firebase, para autenticación y base de datos.
+- Fastify como servidor.
 
 
 ## Logo:
