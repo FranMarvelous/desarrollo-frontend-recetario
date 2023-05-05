@@ -98,7 +98,7 @@ nav a:hover {
     transform: translateY(-2px);
   }
 
-@media only screen and (max-width: 780px){
+@media only screen and (max-width: 400px){
     .btn{
         margin-right: 0%;
         margin-bottom: 2%;

@@ -70,7 +70,7 @@ nav a:hover {
     padding-top: 68vh;
 }
 
-@media only screen and (max-width: 780px){
+@media only screen and (max-width: 400px){
     .slide{
         min-height: 10vh;
     }
