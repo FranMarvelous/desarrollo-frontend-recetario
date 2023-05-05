@@ -91,7 +91,6 @@ body{
     cursor: pointer;
     font-size: 16px;
     margin-top: 30px;
-    margin-left: 2em;
     font-family: 'Poppins';
   }
   
@@ -164,10 +163,11 @@ body{
 /*anchor hacia registro*/
 
 a{
-  color: rgb(252, 247, 248);;
+  color: #000000;
   cursor: pointer;
   font-size: 16px; 
   font-family: 'Poppins';
+  text-decoration: none;
 }
 
 a:hover {
