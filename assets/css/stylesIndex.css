@@ -71,6 +71,12 @@ nav a:hover {
     padding-top: 68vh;
 }
 
+@media only screen and (max-width: 400px){
+    .slide{
+        min-height: 10vh;
+    }
+}
+
 @media only screen and (max-width: 780px){
     .slide{
         min-height: 10vh;
@@ -99,6 +105,13 @@ nav a:hover {
   }
 
 @media only screen and (max-width: 400px){
+    .btn{
+        margin-right: 0%;
+        margin-bottom: 2%;
+    }
+}
+
+@media only screen and (max-width: 780px){
     .btn{
         margin-right: 0%;
         margin-bottom: 2%;

@@ -77,6 +77,11 @@ nav a:hover {
 }
 
 
+@media only screen and (max-width: 780px){
+    .slide{
+        min-height: 10vh;
+    }
+}
 
 /*MAIN*/
 main {
