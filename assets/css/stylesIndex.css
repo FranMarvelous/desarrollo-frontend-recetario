@@ -1,3 +1,4 @@
+
 /*Container general*/
 main {background-color:white;}
 
@@ -63,9 +64,9 @@ nav a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    min-height: 100vh; 
     background-color: white;
     max-width: 100%;
+    *min-height: 100vh; 
     max-height: 100vh;
     padding-top: 68vh;
 }
@@ -77,7 +78,7 @@ nav a:hover {
     background: linear-gradient(to right, #0b6817, rgb(61, 167, 61)); 
     color: #ffffff; 
     text-align: center;
-    font-size: 1.5rem; 
+    font-size: 1rem; 
     font-family: 'Poppins'; 
     border-radius: 8px; /*bordes redondos*/
     width: 10em;
