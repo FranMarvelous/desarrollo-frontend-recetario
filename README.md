@@ -20,7 +20,9 @@ https://www.figma.com/proto/L3bD0UDNqP525iKUzPlbaM/Recetario-Barvelous?node-id=0
 - Login: https://franmarvelous.github.io/desarrollo-frontend-recetario/login.html
 
 ### Zona Privada
-- Recetario: https://franmarvelous.github.io/desarrollo-frontend-recetario/recetario.html - Favoritos (react-CRUD): https://franmarvelous.github.io/desarrollo-frontend-recetario/admin/categoria/ 
+- Recetario: https://franmarvelous.github.io/desarrollo-frontend-recetario/recetario.html 
+
+- Favoritos (react-CRUD): https://franmarvelous.github.io/desarrollo-frontend-recetario/admin/categoria/ 
 
 Puede crear usuario propio mediante registro, o bien utilizar:
 
