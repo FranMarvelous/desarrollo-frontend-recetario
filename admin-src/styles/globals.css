@@ -9,7 +9,7 @@
 
 
 .categoria{
-  background-image: url(../fondoPerfil.png);
+  background-image: url(/fondoPerfil.png);
   background-size: cover;
   width: 100%;
   height: 180vh;
