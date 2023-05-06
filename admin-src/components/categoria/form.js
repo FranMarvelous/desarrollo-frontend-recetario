@@ -70,7 +70,7 @@ export default function CategoriaForm({categorias, setCategorias}) {
                 <textarea className="textarea" value={descripcion} onChange={(e) => setDescripcion(e.target.value)}></textarea>
                 
                 <br></br>
-                <button type="submit" class="submitBtn">Agregar</button>
+                <button type="submit" className="submitBtn">Agregar</button>
             </form> 
         </div>
 
