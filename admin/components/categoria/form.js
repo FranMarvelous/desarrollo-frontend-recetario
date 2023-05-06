@@ -34,6 +34,11 @@ export default function CategoriaForm({categorias, setCategorias}) {
             console.dir( categoriaGuardada );
             alert("Categoría guardada exitosamente");
     
+            //actualiza la variable de estado
+            setCategorias(
+                [...catergorias, categoriaGuardada] 
+            );
+            
         } catch (error) {
             console.error( error );
         }
@@ -44,7 +49,9 @@ export default function CategoriaForm({categorias, setCategorias}) {
     //JSX    
         <> 
             <h1 className="titulo">Probaste una nueva receta?</h1>
+            <br/>
             <h3 className="titulo">Agrégala a tu lista de recetas, dale un review para que sepas cuales repetir!</h3>
+            <br/>
             <form action="form" method="post" onSubmit={procesarFormulario}>
                 <input type="text" id="Receta" value={receta} onChange={(e) => setReceta(e.target.value)}></input>
                 <label htmlFor="receta">Receta</label>
@@ -57,7 +64,7 @@ export default function CategoriaForm({categorias, setCategorias}) {
                 
                 <textarea value={descripcion} onChange={(e) => setDescripcion(e.target.value)}></textarea>
                 <label htmlFor="descripcion">Review</label>
-                
+                <br/>
                 <button type="submit">Agregar</button>
             </form>
 

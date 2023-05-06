@@ -43,7 +43,9 @@ export default function CategoriaListado({categorias, setCategorias}) {
 
     return (
         <>
+            <br/>
             <h2>Mis recetas favoritas</h2>
+            <br/>
             <table border={1}>
                 <thead>
                     <tr>
