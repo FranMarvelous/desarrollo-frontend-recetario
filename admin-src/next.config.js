@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   output: 'export',
   //esta será la ruta con la que se reescribirán los enlaces
-  basePath: '/admin',
+  basePath: '/desarrollo-frontend-recetario',
   trailingSlash: true,
   images: {
     unoptimized: true
