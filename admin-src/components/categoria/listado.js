@@ -42,7 +42,7 @@ export default function CategoriaListado({categorias, setCategorias}) {
     };
 
     return (
-        <>
+        <div className="listado">
             <br/>
             <h2>Mis recetas favoritas</h2>
             <br/>
@@ -70,7 +70,8 @@ export default function CategoriaListado({categorias, setCategorias}) {
                     ))}
                 </tbody>
             </table>
-        </>
+            <input type="button" className="submitBtn" onclick="history.back()" name="volver" value="Volver" />
+        </div>
     );
 }
 

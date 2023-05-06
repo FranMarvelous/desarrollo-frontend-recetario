@@ -60,6 +60,9 @@ body{
     background: none;
     z-index: 1;
   }
+  th{
+    color: #000000;
+  }
   
   /*esconder el placeholder:*/
   ::placeholder {

@@ -36,7 +36,7 @@ export default function CategoriaForm({categorias, setCategorias}) {
     
             //actualiza la variable de estado
             setCategorias(
-                [...catergorias, categoriaGuardada] 
+                [...categorias, categoriaGuardada] 
             );
             
         } catch (error) {
@@ -47,29 +47,32 @@ export default function CategoriaForm({categorias, setCategorias}) {
 
     return (
     //JSX    
-        <> 
-            <h1 className="titulo">Probaste una nueva receta?</h1>
-            <br/>
+
+        <div className="signupFrm"> 
+            <h1 className="title">Probaste una nueva receta?</h1>
             <h3 className="titulo">Agrégala a tu lista de recetas, dale un review para que sepas cuales repetir!</h3>
-            <br/>
-            <form action="form" method="post" onSubmit={procesarFormulario}>
-                <input type="text" id="Receta" value={receta} onChange={(e) => setReceta(e.target.value)}></input>
-                <label htmlFor="receta">Receta</label>
-
-                <input type="text" id="tipo" value={tipo} onChange={(e) => setTipo(e.target.value)}></input>
-                <label htmlFor="tipo">Cocktail o mocktail</label>
-
-                <input type="number" min={"0"} max={"7"} id="nota" value={nota} onChange={(e) => setNota(e.target.value)}></input>
-                <label htmlFor="nombre">Nota 0-7</label>
+                <br></br>
+            <form action="form" method="post" onSubmit={procesarFormulario} className="form">
+                <label htmlFor="receta" className="label">Receta</label>               
+                <br></br>
+                <input type="text" id="Receta" className="input" value={receta} onChange={(e) => setReceta(e.target.value)}></input>
+                <br></br>
+                <label htmlFor="tipo" className="label">Cocktail o mocktail</label>
+                <br></br>
+                <input type="text" id="tipo" className="input" value={tipo} onChange={(e) => setTipo(e.target.value)}></input>
+                <br></br>
+                <label htmlFor="nombre" className="label">Nota 0-7</label>
+                <br></br>
+                <input type="number" className="input" min={"0"} max={"7"} id="nota" value={nota} onChange={(e) => setNota(e.target.value)}></input>
+                <br></br>
+                <label htmlFor="descripcion" className="label">Review</label>
+                <br></br>
+                <textarea className="textarea" value={descripcion} onChange={(e) => setDescripcion(e.target.value)}></textarea>
                 
-                <textarea value={descripcion} onChange={(e) => setDescripcion(e.target.value)}></textarea>
-                <label htmlFor="descripcion">Review</label>
-                <br/>
-                <button type="submit">Agregar</button>
-            </form>
-
-            Receta: {receta} | Tipo: {tipo} | Nota: {nota} |Descripción: {descripcion}
-        </>
+                <br></br>
+                <button type="submit" class="submitBtn">Agregar</button>
+            </form> 
+        </div>
 
     );
 }
